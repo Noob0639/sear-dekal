@@ -22,18 +22,16 @@ export default class Details extends Component {
                   <img src={img} className="img-fluid" alt="product" />
                 </div>
                 <div className="col-10 mx-auto col-md-6 my-3 text-capitalize">
-                  <h2>model : {title}</h2>
                   <h4 className="text-title text-uppercase text-muted mt-3 mb-2">
-                    made by : <span className="text-uppercase">{company}</span>
+                    <span className="text-uppercase">{company}</span>
                   </h4>
                   <h4 className="text-blue">
                     <strong>
-                      price : <span>$</span>
-                      {price}
+                      pris : {price} <span> kr</span>
                     </strong>
                   </h4>
                   <p className="text-capitalize font-weight-bold mt-3 mb-0">
-                    product information:
+                    produkt information:
                   </p>
                   <p className="text-muted lead">{info}</p>
                   <div>
@@ -48,7 +46,7 @@ export default class Details extends Component {
                         value.openModal(id);
                       }}
                     >
-                      {inCart ? "in cart" : "add to cart"}
+                      {inCart ? "redan tillagd" : "lägg i kundkorgen"}
                     </ButtonContainer>
                   </div>
                 </div>
