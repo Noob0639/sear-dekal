@@ -4,7 +4,7 @@ import { PayPalScriptProvider, PayPalButtons } from "@paypal/react-paypal-js";
 export default class MyApp extends React.Component {
   render() {
     const clientClientId = process.env.REACT_APP_APP_ID;
-    const currency = "USD";
+    const currency = "SEK";
 
     // Correct syntax: Direct assignment without curly braces.
     // Using String(...) ensures PayPal gets a string value (e.g., "10.00").
