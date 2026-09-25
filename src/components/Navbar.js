@@ -17,7 +17,7 @@ export default class Navbar extends Component {
         <ul className="navbar-nav align-items-center">
           <li className="nav-item ms-5">
             <Link to="/" className="nav-link">
-              products
+              dekaler
             </Link>
           </li>
         </ul>
